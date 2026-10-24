@@ -137,3 +137,20 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .notice { padding: 14px 16px; border: 3px solid; max-width: 560px; }
 .notice.ok { border-color: var(--green); color: var(--green); }
 .notice.bad { border-color: var(--pink); color: var(--pink); }
+
+/* ===== PRESS START-KNAPPEN ===== */
+button.start { background: none; border: 0; padding: 6px 0; cursor: pointer; justify-self: start; }
+button.start:hover { animation: none; color: var(--green); }
+button.start:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+
+/* ===== MINISPELET PIXEL HOPP ===== */
+.game-overlay { position: fixed; inset: 0; z-index: 50; background: #07061acc; display: grid; place-items: center;
+  padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.game-overlay[hidden] { display: none; }
+.game-box { width: min(100%, 720px); background: var(--panel); border: 3px solid var(--line); box-shadow: 8px 8px 0 #00000077; padding: 14px; display: grid; gap: 10px; }
+.game-top { display: flex; justify-content: space-between; align-items: center; }
+.game-top .pixel { font-size: .75rem; color: var(--green); }
+.game-close { font: inherit; background: none; color: var(--text); border: 2px solid var(--line); width: 36px; height: 36px; cursor: pointer; }
+.game-close:hover { border-color: var(--pink); color: var(--pink); }
+.game-box canvas { width: 100%; height: auto; aspect-ratio: 16 / 9; image-rendering: pixelated; touch-action: manipulation; cursor: pointer; display: block; background: var(--bg); }
+.game-help { color: var(--muted); font-size: .9rem; text-align: center; }
