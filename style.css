@@ -121,3 +121,19 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .facts li { display: grid; grid-template-columns: 9rem 1fr; gap: 12px; padding-bottom: 10px; border-bottom: 2px dashed var(--line); }
 .facts li b { font-family: var(--pixel); font-size: .6rem; color: var(--pink); font-weight: 400; padding-top: .35em; }
 @media (max-width: 480px) { .facts li { grid-template-columns: 1fr; gap: 4px; } }
+
+/* ===== KONTAKTFORMULÄR ===== */
+.form { max-width: 560px; }
+.form label { font-weight: 600; margin-top: 6px; }
+.form .hint { font-weight: 400; color: var(--muted); font-size: .9rem; }
+.form input, .form textarea {
+  font: inherit; color: var(--text); background: var(--bg);
+  border: 3px solid var(--line); padding: 12px; width: 100%;
+}
+.form input:focus, .form textarea:focus { outline: none; border-color: var(--green); }
+.form textarea { resize: vertical; }
+.form .coin { justify-self: start; margin-top: 10px; }
+.trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.notice { padding: 14px 16px; border: 3px solid; max-width: 560px; }
+.notice.ok { border-color: var(--green); color: var(--green); }
+.notice.bad { border-color: var(--pink); color: var(--pink); }

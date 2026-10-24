@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontakt – Leo Pihl</title>
+<meta name="description" content="Skicka ett meddelande till Leo.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%2312102a'/%3E%3Crect x='1' y='3' width='6' height='3' fill='%2337f2c4'/%3E%3Crect x='2' y='4' width='1' height='1' fill='%2312102a'/%3E%3Crect x='5' y='4' width='1' height='1' fill='%23ff5ea8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;600&display=swap">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== MENY =====
+     Vill du lägga till en sida? Lägg till en rad <li> här, och i menyn på de andra sidorna. -->
+<nav class="nav" aria-label="Meny">
+  <div class="wrap">
+    <a class="logo" href="index.html">LEO PIHL</a>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="bilder.html">Bilder</a></li>
+      <li><a href="om-mig.html">Om mig</a></li>
+      <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<header class="wrap page-head">
+  <p class="tag">SEND MESSAGE</p>
+  <h1>Kontakt</h1>
+  <p>Vill du säga hej eller tipsa om ett bra spel? Skriv här! En vuxen läser alla meddelanden först.</p>
+</header>
+
+<main class="wrap">
+  <!-- ===== KONTAKTFORMULÄR =====
+       Formuläret skickas till kontakt.php, som mejlar meddelandet.
+       Vart mejlet går står i filen kontakt-config.php på servern (inte på GitHub). -->
+  <section>
+    <p class="notice" id="notice" role="status" hidden></p>
+
+    <form class="form card" action="kontakt.php" method="post">
+      <label for="namn">Namn</label>
+      <input id="namn" name="namn" type="text" maxlength="80" required autocomplete="name">
+
+      <label for="epost">Din e-post <span class="hint">(så vi kan svara)</span></label>
+      <input id="epost" name="epost" type="email" maxlength="120" required autocomplete="email">
+
+      <label for="meddelande">Meddelande</label>
+      <textarea id="meddelande" name="meddelande" rows="6" maxlength="2000" required></textarea>
+
+      <!-- Fälla för spamrobotar: människor ser inte det här fältet -->
+      <div class="trap" aria-hidden="true">
+        <label for="webbplats">Lämna tomt</label>
+        <input id="webbplats" name="webbplats" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="t" id="t" value="">
+
+      <button class="coin" type="submit">SKICKA ▶</button>
+    </form>
+  </section>
+</main>
+
+<script>
+  // Tidsstämpel mot spam: robotar skickar ofta på under en sekund.
+  document.getElementById("t").value = Math.floor(Date.now() / 1000);
+
+  // Visa svaret från kontakt.php (?status=...)
+  var texter = {
+    skickat: "Tack! Ditt meddelande är skickat. 🎮",
+    fel: "Något saknas. Fyll i namn, en riktig e-postadress och ett meddelande.",
+    vanta: "Du har skickat många meddelanden. Vänta en stund och försök igen.",
+    server: "Meddelandet kunde inte skickas just nu. Försök igen senare."
+  };
+  var status = new URLSearchParams(location.search).get("status");
+  if (texter[status]) {
+    var n = document.getElementById("notice");
+    n.textContent = texter[status];
+    n.className = "notice " + (status === "skickat" ? "ok" : "bad");
+    n.hidden = false;
+  }
+</script>
+
+<footer class="wrap">
+  <p>© 2026 Leo Pihl · Byggd från grunden, utan WordPress</p>
+</footer>
+
+</body>
+</html>
