@@ -57,12 +57,6 @@
       }
     ]
   },
-  "bilder": [
-    {
-      "bild": "/bilder/preview-dark.png",
-      "text": "Skriv vad bilden visar här."
-    }
-  ],
   "kontakt": {
     "intro": "Vill du säga hej eller tipsa om ett bra spel? Skriv här!"
   },
