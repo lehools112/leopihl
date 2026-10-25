@@ -1,31 +1,67 @@
 {
   "start": {
     "tagg": "PLAYER 1",
-    "rubrik": "Leo Pihl",
+    "rubrik": "Leo ",
     "valkomst": "Välkommen till min sida! Här skriver jag om spelen jag gillar mest."
   },
   "favoritspel": [
-    { "namn": "Roblox", "text": "Skriv spelets namn ovanför och vad som är kul med det här." },
-    { "namn": "Minecraft", "text": "Skriv spelets namn ovanför och vad som är kul med det här." },
-    { "namn": "Favoritspel tre", "text": "Skriv spelets namn ovanför och vad som är kul med det här." }
+    {
+      "namn": "Roblox",
+      "text": "Skriv spelets namn ovanför och vad som är kul med det här."
+    },
+    {
+      "namn": "Minecraft",
+      "text": "Skriv spelets namn ovanför och vad som är kul med det här."
+    },
+    {
+      "namn": "Favoritspel tre",
+      "text": "Skriv spelets namn ovanför och vad som är kul med det här."
+    }
   ],
   "stats": [
-    { "namn": "Bygga", "varde": 90 },
-    { "namn": "Strategi", "varde": 70 },
-    { "namn": "Snabbhet", "varde": 80 },
-    { "namn": "Lagspel", "varde": 75 }
+    {
+      "namn": "Bygga",
+      "varde": 90
+    },
+    {
+      "namn": "Strategi",
+      "varde": 70
+    },
+    {
+      "namn": "Snabbhet",
+      "varde": 80
+    },
+    {
+      "namn": "Lagspel",
+      "varde": 75
+    }
   ],
   "om_mig": {
     "text": "Hej! Jag heter Leo och det här är min egen hemsida. Här skriver du några meningar om dig själv, till exempel vad du gillar att göra när du inte spelar.\n\nSkriv gärna om hur du började spela och vilket spel som var ditt första.",
     "fakta": [
-      { "rubrik": "FAVORITSPEL", "svar": "Skriv här" },
-      { "rubrik": "SPELAR PÅ", "svar": "Dator, konsol eller mobil?" },
-      { "rubrik": "BÄSTA GENRE", "svar": "Skriv här" },
-      { "rubrik": "DRÖMSPEL", "svar": "Ett spel du önskar fanns" }
+      {
+        "rubrik": "FAVORITSPEL",
+        "svar": "Skriv här"
+      },
+      {
+        "rubrik": "SPELAR PÅ",
+        "svar": "Dator, konsol eller mobil?"
+      },
+      {
+        "rubrik": "BÄSTA GENRE",
+        "svar": "Skriv här"
+      },
+      {
+        "rubrik": "DRÖMSPEL",
+        "svar": "Ett spel du önskar fanns"
+      }
     ]
   },
   "bilder": [
-    { "bild": "/bilder/bild1.jpg", "text": "Skriv vad bilden visar här." }
+    {
+      "bild": "/bilder/bild1.jpg",
+      "text": "Skriv vad bilden visar här."
+    }
   ],
   "kontakt": {
     "intro": "Vill du säga hej eller tipsa om ett bra spel? Skriv här! En vuxen läser alla meddelanden först."
