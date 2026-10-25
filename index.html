@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%2312102a'/%3E%3Crect x='1' y='3' width='6' height='3' fill='%2337f2c4'/%3E%3Crect x='2' y='4' width='1' height='1' fill='%2312102a'/%3E%3Crect x='5' y='4' width='1' height='1' fill='%23ff5ea8'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;600;700&display=swap">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -30,11 +30,24 @@
 
 <!-- ===== TOPPEN AV SIDAN ===== -->
 <header class="wrap hero">
+  <div class="hero-in">
+    <div class="hero-text">
   <p class="tag">PLAYER 1</p>
   <h1>Leo Pihl</h1>
   <p>Välkommen till min sida! Här skriver jag om spelen jag gillar mest.</p>
   <!-- Knappen startar minispelet Pixel Hopp (koden finns i spel.js) -->
-  <button class="start" id="press-start" type="button">▶ PRESS START</button>
+  <div class="hero-actions">
+    <button class="start" id="press-start" type="button">▶ PRESS START</button>
+    <!-- Slår av och på 8-bitljudet (koden finns i ljud.js) -->
+    <button class="ljud" type="button" data-ljud-knapp aria-pressed="true">♪ LJUD PÅ</button>
+  </div>
+    </div>
+    <div class="blocks" aria-hidden="true">
+      <span class="b"></span><span class="b"></span><span class="e"></span><span class="y"></span>
+      <span class="e"></span><span class="b"></span><span class="o"></span><span class="y"></span>
+      <span class="o"></span><span class="o"></span><span class="o"></span><span class="y"></span>
+    </div>
+  </div>
 </header>
 
 <main class="wrap">
@@ -89,6 +102,7 @@
   <p>© 2026 Leo Pihl</p>
 </footer>
 
+<script src="ljud.js"></script>
 <script>
   // Minispelet: räknar tryck och visar en ny nivå var tionde poäng.
   var score = 0;
@@ -99,7 +113,9 @@
   document.getElementById("coin").addEventListener("click", function () {
     score = score + 1;
     scoreText.textContent = String(score).padStart(3, "0");
+    if (window.Ljud) Ljud.mynt();
     if (score % 10 === 0) {
+      if (window.Ljud) Ljud.levelup();
       var n = Math.min(score / 10, levels.length) - 1;
       levelText.textContent = "LEVEL UP! Du är nu: " + levels[n];
     }
