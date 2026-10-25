@@ -1,0 +1,114 @@
+# Inställningar för Pages CMS (app.pagescms.org).
+# Bestämmer vilka fält som går att redigera och var bilderna sparas.
+
+media:
+  input: bilder
+  output: /bilder
+
+content:
+  - name: sida
+    label: Leos sida
+    type: file
+    path: innehall/sida.json
+    format: json
+    fields:
+      - name: start
+        label: Startsidan
+        type: object
+        fields:
+          - name: tagg
+            label: Liten etikett ovanför namnet
+            type: string
+          - name: rubrik
+            label: Stor rubrik
+            type: string
+          - name: valkomst
+            label: Välkomsttext
+            type: text
+
+      - name: favoritspel
+        label: Mina favoritspel
+        description: Lägg till, ta bort eller flytta spel. Ordningen blir #1, #2, #3 …
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{namn}"
+        fields:
+          - name: namn
+            label: Spelets namn
+            type: string
+            required: true
+          - name: text
+            label: Vad är kul med spelet?
+            type: text
+
+      - name: stats
+        label: Mina stats
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{namn}"
+        fields:
+          - name: namn
+            label: Namn
+            type: string
+            required: true
+          - name: varde
+            label: Värde (0–100)
+            type: number
+            options:
+              min: 0
+              max: 100
+
+      - name: om_mig
+        label: Om mig
+        type: object
+        fields:
+          - name: text
+            label: Text om mig
+            description: Lämna en tom rad mellan styckena. Skriv inte ålder, skola, var du bor eller användarnamn i spel.
+            type: text
+          - name: fakta
+            label: Snabbfakta
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{rubrik}"
+            fields:
+              - name: rubrik
+                label: Rubrik
+                type: string
+              - name: svar
+                label: Svar
+                type: string
+
+      - name: bilder
+        label: Bilder
+        description: Ladda upp en bild och skriv vad den visar.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{text}"
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+          - name: text
+            label: Vad visar bilden?
+            type: string
+
+      - name: kontakt
+        label: Kontaktsidan
+        type: object
+        fields:
+          - name: intro
+            label: Text ovanför formuläret
+            type: text
+
+      - name: sidfot
+        label: Sidfot
+        type: string
