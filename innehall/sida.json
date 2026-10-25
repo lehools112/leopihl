@@ -59,6 +59,7 @@
   },
   "bilder": [
     {
+      "bild": "/bilder/preview-dark.png",
       "text": "Skriv vad bilden visar här."
     }
   ],
