@@ -12,6 +12,12 @@ jobs:
       - name: Hämta koden
         uses: actions/checkout@v4
 
+      - name: Installera Python-verktyg
+        run: pip install jinja2
+
+      - name: Bygg sidan av texterna och mallarna
+        run: python3 bygg.py
+
       - name: Ladda upp till Inleed via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -20,9 +26,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           security: loose
+          local-dir: ./public/
           server-dir: ./
-          exclude: |
-            **/.git*
-            **/.git*/**
-            .github/**
-            README.md
