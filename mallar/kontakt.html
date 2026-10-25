@@ -1,0 +1,74 @@
+{% extends "bas.html" %}
+{% block titel %}Kontakt – Leo Pihl{% endblock %}
+{% block beskrivning %}Skicka ett meddelande till Leo.{% endblock %}
+{% block innehall %}
+<header class="wrap page-head">
+  <p class="tag">SEND MESSAGE</p>
+  <h1>Kontakt</h1>
+  <p>{{ kontakt.intro }}</p>
+</header>
+
+<main class="wrap">
+  <!-- ===== KONTAKTFORMULÄR =====
+       Formuläret skickas till kontakt.php, som mejlar meddelandet.
+       Vart mejlet går står i filen kontakt-config.php på servern (inte på GitHub). -->
+  <section>
+    <p class="notice" id="notice" role="status" hidden></p>
+
+    <form class="form card" action="kontakt.php" method="post">
+      <label for="namn">Namn</label>
+      <input id="namn" name="namn" type="text" maxlength="80" required autocomplete="name">
+
+      <label for="epost">Din e-post <span class="hint">(så vi kan svara)</span></label>
+      <input id="epost" name="epost" type="email" maxlength="120" required autocomplete="email">
+
+      <label for="meddelande">Meddelande</label>
+      <textarea id="meddelande" name="meddelande" rows="6" maxlength="2000" required></textarea>
+
+      <!-- Fälla för spamrobotar: människor ser inte det här fältet -->
+      <div class="trap" aria-hidden="true">
+        <label for="webbplats">Lämna tomt</label>
+        <input id="webbplats" name="webbplats" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="t" id="t" value="">
+
+      <div class="form-actions">
+        <button class="coin" type="submit">SKICKA ▶</button>
+        <button class="ljud" type="button" data-ljud-knapp aria-pressed="true">♪ LJUD PÅ</button>
+      </div>
+    </form>
+  </section>
+</main>
+{% endblock %}
+{% block skript %}
+<script src="ljud.js?v={{ version }}"></script>
+<script>
+  // Game over-ljud när man skickar. Formuläret skickas när melodin har spelat klart.
+  var formular = document.querySelector(".form");
+  formular.addEventListener("submit", function (e) {
+    if (!window.Ljud || Ljud.avstangt()) return;   // ljudet av: skicka direkt
+    e.preventDefault();
+    formular.querySelector('button[type="submit"]').disabled = true;
+    Ljud.over();
+    setTimeout(function () { formular.submit(); }, 900);
+  });
+
+  // Tidsstämpel mot spam: robotar skickar ofta på under en sekund.
+  document.getElementById("t").value = Math.floor(Date.now() / 1000);
+
+  // Visa svaret från kontakt.php (?status=...)
+  var texter = {
+    skickat: "Tack! Ditt meddelande är skickat. 🎮",
+    fel: "Något saknas. Fyll i namn, en riktig e-postadress och ett meddelande.",
+    vanta: "Du har skickat många meddelanden. Vänta en stund och försök igen.",
+    server: "Meddelandet kunde inte skickas just nu. Försök igen senare."
+  };
+  var status = new URLSearchParams(location.search).get("status");
+  if (texter[status]) {
+    var n = document.getElementById("notice");
+    n.textContent = texter[status];
+    n.className = "notice " + (status === "skickat" ? "ok" : "bad");
+    n.hidden = false;
+  }
+</script>
+{% endblock %}

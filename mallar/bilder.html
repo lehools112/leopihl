@@ -1,0 +1,23 @@
+{% extends "bas.html" %}
+{% block titel %}Bilder – Leo Pihl{% endblock %}
+{% block beskrivning %}Bilder från Leos spel.{% endblock %}
+{% block innehall %}
+<header class="wrap page-head">
+  <p class="tag">GALLERI</p>
+  <h1>Bilder</h1>
+  <p>Skärmdumpar från mina spel och saker jag har byggt.</p>
+</header>
+
+<main class="wrap">
+  <section>
+    <div class="gallery">
+{%- for b in bilder %}
+      <figure class="shot">
+        <div class="frame">{% if b.bild %}<img src="{{ b.bild.lstrip('/') }}" alt="{{ b.text }}" loading="lazy" onerror="this.remove()">{% endif %}</div>
+        <figcaption>{{ b.text }}</figcaption>
+      </figure>
+{%- endfor %}
+    </div>
+  </section>
+</main>
+{% endblock %}

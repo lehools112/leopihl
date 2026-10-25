@@ -1,0 +1,77 @@
+{% extends "bas.html" %}
+{% block titel %}{{ start.rubrik }}{% endblock %}
+{% block beskrivning %}Leos egen sida om datorspel.{% endblock %}
+{% block innehall %}
+{#- Texterna kommer från innehall/sida.json och redigeras i Pages CMS. #}
+<header class="wrap hero">
+  <div class="hero-in">
+    <div class="hero-text">
+      <p class="tag">{{ start.tagg }}</p>
+      <h1>{{ start.rubrik }}</h1>
+      <p>{{ start.valkomst }}</p>
+      <div class="hero-actions">
+        <button class="start" id="press-start" type="button">▶ PRESS START</button>
+        <button class="ljud" type="button" data-ljud-knapp aria-pressed="true">♪ LJUD PÅ</button>
+      </div>
+    </div>
+    <div class="blocks" aria-hidden="true">
+      <span class="b"></span><span class="b"></span><span class="e"></span><span class="y"></span>
+      <span class="e"></span><span class="b"></span><span class="o"></span><span class="y"></span>
+      <span class="o"></span><span class="o"></span><span class="o"></span><span class="y"></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Mina favoritspel</h2>
+    <div class="grid">
+{%- for spel in favoritspel %}
+      <article class="card">
+        <p class="pixel">#{{ loop.index }}</p>
+        <h3>{{ spel.namn }}</h3>
+        <p>{{ spel.text }}</p>
+      </article>
+{%- endfor %}
+    </div>
+  </section>
+
+  <section>
+    <h2>Mina stats</h2>
+    <ul class="stats">
+{%- for s in stats %}
+      <li>{{ s.namn }} <div class="bar"><span style="width: {{ [[s.varde|int, 0]|max, 100]|min }}%"></span></div></li>
+{%- endfor %}
+    </ul>
+  </section>
+
+  <section class="game">
+    <h2>Minispel</h2>
+    <p class="score" id="score">000</p>
+    <button class="coin" id="coin" type="button">+1 MYNT</button>
+    <p class="level" id="level">Tryck så snabbt du kan!</p>
+  </section>
+</main>
+{% endblock %}
+{% block skript %}
+<script src="ljud.js?v={{ version }}"></script>
+<script>
+  // Minispelet: räknar tryck och visar en ny nivå var tionde poäng.
+  var score = 0;
+  var scoreText = document.getElementById("score");
+  var levelText = document.getElementById("level");
+  var levels = ["Nybörjare", "Lärling", "Proffs", "Mästare", "Legend"];
+
+  document.getElementById("coin").addEventListener("click", function () {
+    score = score + 1;
+    scoreText.textContent = String(score).padStart(3, "0");
+    if (window.Ljud) Ljud.mynt();
+    if (score % 10 === 0) {
+      if (window.Ljud) Ljud.levelup();
+      var n = Math.min(score / 10, levels.length) - 1;
+      levelText.textContent = "LEVEL UP! Du är nu: " + levels[n];
+    }
+  });
+</script>
+<script src="spel.js?v={{ version }}"></script>
+{% endblock %}

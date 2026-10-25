@@ -1,0 +1,26 @@
+{% extends "bas.html" %}
+{% block titel %}Om mig – Leo Pihl{% endblock %}
+{% block beskrivning %}Om Leo.{% endblock %}
+{% block innehall %}
+<header class="wrap page-head">
+  <p class="tag">PLAYER INFO</p>
+  <h1>Om mig</h1>
+</header>
+
+<main class="wrap">
+  <section class="text">
+{%- for stycke in om_mig.text.split("\n\n") if stycke.strip() %}
+    <p>{{ stycke.strip() }}</p>
+{%- endfor %}
+  </section>
+
+  <section>
+    <h2>Snabbfakta</h2>
+    <ul class="facts">
+{%- for f in om_mig.fakta %}
+      <li><b>{{ f.rubrik }}</b> <span>{{ f.svar }}</span></li>
+{%- endfor %}
+    </ul>
+  </section>
+</main>
+{% endblock %}
