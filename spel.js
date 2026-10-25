@@ -26,11 +26,13 @@
   overlay.innerHTML =
     '<div class="game-box" role="dialog" aria-label="Pixel Hopp">' +
     '  <div class="game-top"><span class="pixel">PIXEL HOPP</span>' +
-    '  <button class="game-close" type="button" aria-label="Stäng spelet">✕</button></div>' +
+    '  <div class="game-buttons"><button class="ljud" type="button" data-ljud-knapp aria-pressed="true">♪ LJUD PÅ</button>' +
+    '  <button class="game-close" type="button" aria-label="Stäng spelet">✕</button></div></div>' +
     '  <canvas width="' + W + '" height="' + H + '"></canvas>' +
     '  <p class="game-help">Tryck, klicka eller mellanslag för att hoppa</p>' +
     '</div>';
   document.body.appendChild(overlay);
+  if (window.Ljud) Ljud.uppdatera();
 
   var canvas = overlay.querySelector("canvas");
   var ctx = canvas.getContext("2d");
@@ -71,7 +73,7 @@
     else if (state === "over") { reset(); }
   }
   function jump() {
-    if (player.onGround) { player.vy = -JUMP; player.onGround = false; }
+    if (player.onGround) { player.vy = -JUMP; player.onGround = false; if (window.Ljud) Ljud.hopp(); }
   }
 
   canvas.addEventListener("pointerdown", function (e) { e.preventDefault(); press(); });
@@ -86,6 +88,7 @@
   // ---- Öppna / stäng ----
   function open() {
     reset();
+    if (window.Ljud) Ljud.start();
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
     last = performance.now();
@@ -155,13 +158,14 @@
       if (hit(body, blocks[i])) { gameOver(); return; }
     }
     coins = coins.filter(function (c) {
-      if (hit(player, c)) { coinScore += COIN_POINTS; return false; }
+      if (hit(player, c)) { coinScore += COIN_POINTS; if (window.Ljud) Ljud.mynt(); return false; }
       return c.x + c.w > -10;
     });
   }
 
   function gameOver() {
     state = "over";
+    if (window.Ljud) Ljud.over();
     if (score() > best) { best = score(); saveBest(); }
   }
 
