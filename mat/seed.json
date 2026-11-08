@@ -1,0 +1,757 @@
+{
+ "recipes": [
+  {
+   "id": "acf3f4073a04",
+   "title": "Janssons frestelse",
+   "cat": "Varmt",
+   "info": "4–6 port · ca 1 tim 10 min · form 20×30 cm",
+   "source": "https://www.arla.se/recept/janssons-frestelse/",
+   "ingredients": [
+    "1 gul lök",
+    "3 msk mjölkfritt matfett",
+    "750 g fast potatis",
+    "1 burk ansjovisfilé (ca 125 g)",
+    "3 dl vispbar havregrädde",
+    "1 msk ströbröd (mjölkfritt)"
+   ],
+   "steps": [
+    "Sätt ugnen på 200 °C (180 °C varmluft).",
+    "Skiva löken tunt och fräs mjuk i 1 msk matfett. Skala potatisen och skär i tunna stavar.",
+    "Rör ner ansjovisspadet i havregrädden. Smörj formen.",
+    "Varva hälften av potatisen, löken, ansjovisen och resten av potatisen. Häll över grädden, strö över ströbröd och klicka på 2 msk matfett.",
+    "Grädda långt ner i ugnen 45–50 min tills potatisen är mjuk. Låt vila en stund före servering."
+   ],
+   "notes": "Kan göras klar upp till två dagar innan. Täck med folie om ytan blir för mörk.",
+   "updated": 1794142802
+  },
+  {
+   "id": "05b7e921ede3",
+   "title": "Kokt potatis",
+   "cat": "Varmt",
+   "info": "6 port · ca 25 min",
+   "source": "",
+   "ingredients": [
+    "1 kg fast potatis",
+    "Salt",
+    "Färsk dill"
+   ],
+   "steps": [
+    "Skala potatisen och dela de största så bitarna blir lika stora.",
+    "Koka i saltat vatten ca 20 min tills en sticka går lätt igenom.",
+    "Häll av och strö över hackad dill."
+   ],
+   "notes": "",
+   "updated": 1794142802
+  },
+  {
+   "id": "3521e77372ff",
+   "title": "Köttbullar",
+   "cat": "Varmt",
+   "info": "ca 36 små bullar · ca 45 min",
+   "source": "https://www.arla.se/recept/kottbullar/",
+   "ingredients": [
+    "500 g blandfärs",
+    "½ dl ströbröd (mjölkfritt)",
+    "1 dl havredryck",
+    "1 gul lök",
+    "1 ägg",
+    "1 krm malen kryddnejlika",
+    "1 krm malen kryddpeppar",
+    "1 tsk salt",
+    "1 krm svartpeppar",
+    "25 g mjölkfritt matfett till stekning"
+   ],
+   "steps": [
+    "Sätt ugnen på 125 °C (110 °C varmluft).",
+    "Rör ihop ströbröd och havredryck och låt svälla 10 min.",
+    "Riv löken grovt. Blanda lök, färs, ägg och kryddor med ströbrödsblandningen till en jämn smet.",
+    "Rulla ca 36 bullar med fuktade händer. Förtillaga dem på plåt i ugnen 10–15 min.",
+    "Stek bullarna gyllene i matfettet. De är klara vid 72–75 °C inuti."
+   ],
+   "notes": "Håller 3–4 dagar i kyl, så de kan göras dagen innan.",
+   "updated": 1794142802
+  },
+  {
+   "id": "a2d076d80dbc",
+   "title": "Revbensspjäll",
+   "cat": "Varmt",
+   "info": "6 port · ca 1 tim 40 min",
+   "source": "https://www.arla.se/recept/revbensspjall/",
+   "ingredients": [
+    "1,5 kg tjocka revbensspjäll",
+    "1 dl rapsolja",
+    "2 msk paprikapulver",
+    "4 msk kinesisk soja",
+    "2 tsk malen ingefära",
+    "1 tsk salt",
+    "2 krm svartpeppar"
+   ],
+   "steps": [
+    "Sätt ugnen på 175 °C (160 °C varmluft).",
+    "Rör ihop marinaden och spara hälften. Vänd köttet i resten.",
+    "Lägg spjällen med bensidan upp i en form och stek mitt i ugnen ca 30 min.",
+    "Vänd och stek ytterligare ca 1 timme. Pensla gärna med köttsaften.",
+    "Skär mellan benen och pensla med den sparade marinaden."
+   ],
+   "notes": "Kan stekas dagen innan och värmas. En pensling honung vid uppvärmningen ger en klibbig yta.",
+   "updated": 1794142802
+  },
+  {
+   "id": "138155c95d07",
+   "title": "Honungsrostad brysselkål med hasselnötter",
+   "cat": "Varmt",
+   "info": "6 port · ca 40 min",
+   "source": "https://www.koket.se/malin-soderstrom/sallader/gronsaker--potatis-och-andra-rotfrukter/honungsrostad-brysselkal-med-mandlar",
+   "ingredients": [
+    "500 g brysselkål",
+    "1 rödlök",
+    "1 dl hasselnötter",
+    "½ dl olivolja",
+    "2 msk flytande honung",
+    "Salt och svartpeppar"
+   ],
+   "steps": [
+    "Sätt ugnen på 200 °C. Halvera brysselkålen och skär rödlöken i klyftor. Lägg allt i en ugnsform.",
+    "Ringla över olja och honung och salta lätt. Rosta mitt i ugnen ca 30 min.",
+    "Grovhacka hasselnötterna och strö över efter ca 15 min.",
+    "Smaka av med salt och peppar."
+   ],
+   "notes": "Originalet har mandlar – här bytta mot hasselnötter.",
+   "updated": 1794142802
+  },
+  {
+   "id": "d1d78ab26197",
+   "title": "Griljerad julskinka",
+   "cat": "Varmt",
+   "info": "ca 2 tim + griljering · kräver stektermometer",
+   "source": "https://www.arla.se/recept/griljerad-julskinka/",
+   "ingredients": [
+    "1,5 kg rimmad julskinka",
+    "4 msk senap",
+    "1 msk strösocker",
+    "1 äggula",
+    "Ströbröd (mjölkfritt)",
+    "Hela kryddnejlikor (valfritt)"
+   ],
+   "steps": [
+    "Sätt ugnen på 125 °C (100 °C varmluft). Skölj skinkan, låt nätet sitta kvar.",
+    "Lägg skinkan med svålen upp i en form och stick in termometern i den tjockaste delen.",
+    "Låt den stå längst ner i ugnen tills termometern visar 70 °C, ungefär 1–1,5 tim per kilo.",
+    "Låt svalna lite. Klipp upp nätet och dra av nät och svål.",
+    "Höj ugnen till 200 °C. Blanda senap, socker och äggula, pensla skinkan och strö över ströbröd.",
+    "Griljera mitt i ugnen ca 15 min tills ytan fått fin färg."
+   ],
+   "notes": "Ugnsdelen kan göras dagen innan.",
+   "updated": 1794142802
+  },
+  {
+   "id": "492d42bad238",
+   "title": "Gravad lax",
+   "cat": "Kallt",
+   "info": "6 port på buffé · 20 min + 2 dygn i kyl",
+   "source": "https://www.arla.se/recept/gravad-lax/",
+   "ingredients": [
+    "600 g färsk laxfilé med skinn, mittbit",
+    "0,6 dl strösocker",
+    "2 msk salt",
+    "2 tsk svart- eller vitpepparkorn",
+    "1 kruka färsk dill"
+   ],
+   "steps": [
+    "Plocka bort alla ben, låt skinnet sitta kvar. Dela laxen i två lika stora bitar.",
+    "Mortla pepparn och blanda med salt och socker. Gnid in på köttsidorna.",
+    "Grovhacka dillen och lägg på ena biten. Lägg den andra ovanpå med köttsidorna mot varandra, tjock del mot tunn.",
+    "Lägg i en knuten plastpåse eller tät burk i kylen i 2 dygn. Vänd 4–5 gånger under tiden.",
+    "Skrapa bort kryddorna och skär tunna skivor med en lång, tunn kniv."
+   ],
+   "notes": "Håller ca 5 dagar i kyl.",
+   "updated": 1794142802
+  },
+  {
+   "id": "afcf0b3a83ea",
+   "title": "Hovmästarsås",
+   "cat": "Kallt",
+   "info": "ca 2 dl · 15 min",
+   "source": "https://www.arla.se/recept/gravlaxsas/",
+   "ingredients": [
+    "¼ dl senap",
+    "¼ dl sötstark senap",
+    "1 msk flytande honung",
+    "½ msk vitvinsvinäger",
+    "1 dl neutral olja",
+    "1½ msk vatten",
+    "½ tsk salt",
+    "1 nypa malen vitpeppar",
+    "½ dl hackad färsk dill"
+   ],
+   "steps": [
+    "Vispa ihop båda senaperna, honung och vinäger.",
+    "Tillsätt oljan i en tunn stråle under kraftig vispning så såsen tjocknar.",
+    "Vispa ner vattnet lite i taget.",
+    "Smaka av med salt och peppar och vänd ner dillen."
+   ],
+   "notes": "",
+   "updated": 1794142802
+  },
+  {
+   "id": "6a50220950d0",
+   "title": "Klassisk rödbetssallad",
+   "cat": "Kallt",
+   "info": "6 port · 15 min + kylning",
+   "source": "https://www.arla.se/recept/rodbetssallad/",
+   "ingredients": [
+    "500 g inlagda rödbetor",
+    "1 rött äpple",
+    "2 dl havrefraiche",
+    "2 msk majonnäs",
+    "1 msk söt senap",
+    "½ tsk salt"
+   ],
+   "steps": [
+    "Låt rödbetorna rinna av och spara 2 msk av spadet.",
+    "Skala och kärna ur äpplet. Tärna äpple och rödbetor.",
+    "Rör ihop havrefraiche, majonnäs, senap och spadet.",
+    "Vänd ner rödbetor och äpple, smaka av med salt och låt stå kallt en stund."
+   ],
+   "notes": "",
+   "updated": 1794142802
+  },
+  {
+   "id": "8335b1f0d8ad",
+   "title": "Räkröra med pepparrot",
+   "cat": "Kallt",
+   "info": "6 port · 15 min",
+   "source": "https://www.arla.se/recept/rakrora-med-pepparrot/",
+   "ingredients": [
+    "250 g skalade räkor",
+    "½ rödlök",
+    "2 dl havrefraiche",
+    "70 g stenbitsrom",
+    "½ dl hackad färsk dill",
+    "½ dl riven pepparrot",
+    "½ citron (skal och saft)",
+    "1 krm cayennepeppar",
+    "Salt"
+   ],
+   "steps": [
+    "Finhacka löken.",
+    "Blanda allt och smaka av med salt.",
+    "Servera direkt, t.ex. på knäckebröd."
+   ],
+   "notes": "",
+   "updated": 1794142802
+  },
+  {
+   "id": "3d8c0d7216cd",
+   "title": "Grönkålspaj",
+   "cat": "Kallt",
+   "info": "1 paj, 24 cm · ca 1 tim 10 min",
+   "source": "https://www.arla.se/recept/gronkalspaj/",
+   "ingredients": [
+    "125 g kallt mjölkfritt matfett i block",
+    "3 dl vetemjöl",
+    "2 msk kallt vatten",
+    "400 g grönkål",
+    "50 g rostade mandelspån",
+    "150 g mjölkfri riven ost",
+    "2½ dl havrebaserad matlagningsgrädde",
+    "3 ägg",
+    "1 tsk salt",
+    "2 krm svartpeppar"
+   ],
+   "steps": [
+    "Nyp ihop matfett och mjöl, tillsätt vattnet och arbeta snabbt ihop till en deg.",
+    "Tryck ut i formen, nagga botten och låt vila i kyl minst 30 min.",
+    "Sätt ugnen på 200 °C (180 °C varmluft). Förgrädda skalet ca 10 min.",
+    "Dra bort de grova stjälkarna och koka grönkålen i lätt saltat vatten ca 5 min. Krama ur vätskan och hacka.",
+    "Blanda kål, mandel och det mesta av osten och fördela i skalet.",
+    "Vispa grädde, ägg, salt och peppar, häll över och strö resten av osten ovanpå.",
+    "Grädda mitt i ugnen ca 25 min och låt svalna lite."
+   ],
+   "notes": "Håller 3–4 dagar i kyl och går att frysa.",
+   "updated": 1794142802
+  },
+  {
+   "id": "da0b13382c03",
+   "title": "Risgrynsgröt",
+   "cat": "Sött",
+   "info": "ca 6 port på julbord · ca 1 tim",
+   "source": "https://www.arla.se/recept/risgrynsgrot/",
+   "ingredients": [
+    "2½ dl rundkornigt ris",
+    "5 dl vatten",
+    "2 msk mjölkfritt matfett",
+    "½ tsk salt",
+    "8 dl havredryck (plus lite extra)",
+    "1–2 kanelstänger",
+    "1 msk socker (valfritt)"
+   ],
+   "steps": [
+    "Koka ris, vatten, matfett och salt i en stor tjockbottnad kastrull på svag värme ca 10 min.",
+    "Tillsätt havredryck och kanelstänger och låt sjuda på mycket svag värme 30–40 min.",
+    "Späd med mer havredryck om den blir för tjock och smaka av med socker."
+   ],
+   "notes": "Utan vakning: koka riset 10 min, häll i kokhet havredryck med kanel, koka upp, lägg på lock och ställ längst ner i ugnen på 100 °C ca 1 timme.",
+   "updated": 1794142802
+  },
+  {
+   "id": "b8e42ac57b89",
+   "title": "Godaste julkolan",
+   "cat": "Sött",
+   "info": "ca 60 bitar · ca 45 min · sockertermometer",
+   "source": "https://www.arla.se/recept/godaste-julkolan/",
+   "ingredients": [
+    "100 g mjölkfritt matfett i block",
+    "2 dl vispbar havregrädde",
+    "3 dl strösocker",
+    "1 dl ljus sirap",
+    "1 tsk vaniljsocker"
+   ],
+   "steps": [
+    "Smält matfettet i en vid, tjockbottnad kastrull.",
+    "Rör ner grädde, socker, sirap och vanilj. Koka utan lock under omrörning då och då tills smeten når 124 °C, ca 15–30 min.",
+    "Gör kulprov: några droppar i iskallt vatten ska bli en seg, fast kula.",
+    "Häll ut på en oljad plåt, låt svalna och klipp i bitar. Slå in i papper och förvara kallt."
+   ],
+   "notes": "Med havregrädde kan kolan bli något mjukare, så lita på kulprovet. Smaksätt gärna med citrusskal, krossad polkagris eller 2 msk kakao.",
+   "updated": 1794142802
+  },
+  {
+   "id": "c7bc1c484027",
+   "title": "Lussekatter",
+   "cat": "Bröd & bak",
+   "info": "ca 18 st · ca 1 tim 30 min",
+   "source": "https://www.arla.se/recept/lussekatter/",
+   "ingredients": [
+    "25 g jäst",
+    "50 g mjölkfritt matfett",
+    "2½ dl havredryck",
+    "1 dl havrefraiche",
+    "1 paket saffran (0,5 g)",
+    "1 dl strösocker",
+    "½ tsk salt",
+    "ca 8½ dl vetemjöl (ca 500 g)",
+    "Russin",
+    "1 ägg till pensling"
+   ],
+   "steps": [
+    "Smula jästen i en bunke. Smält matfettet, tillsätt havredrycken och värm till högst 37 °C. Häll över jästen.",
+    "Tillsätt havrefraiche, saffran, socker, salt och det mesta av mjölet. Arbeta till en smidig deg och låt jäsa övertäckt ca 30 min.",
+    "Dela i ca 18 bitar, rulla längder och forma S med ändarna inrullade mot mitten. Lägg på plåt med bakplåtspapper.",
+    "Tryck i russin (blötlagda minst 30 min) och låt jäsa ca 30 min.",
+    "Sätt ugnen på 225 °C (210 °C varmluft). Pensla med uppvispat ägg.",
+    "Grädda mitt i ugnen 5–8 min tills de är gyllene. Låt svalna på galler."
+   ],
+   "notes": "Dubbla allt för hela satsen (ca 35 st). Frys det ni inte äter samma dag.",
+   "updated": 1794142802
+  }
+ ],
+ "items": [
+  {
+   "id": "c582444468ad",
+   "text": "Rimmad julskinka, rå, ca 1,5 kg",
+   "cat": "Kött & chark",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "19294610266a",
+   "text": "Tjocka revbensspjäll, 1,5 kg",
+   "cat": "Kött & chark",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "6fee9875b9dd",
+   "text": "Blandfärs, 500 g",
+   "cat": "Kött & chark",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "47652354b2c6",
+   "text": "Prinskorv, mjölkfri",
+   "cat": "Kött & chark",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "65998969dd88",
+   "text": "Korvar till charkbrickan, 2–3 mjölkfria sorter",
+   "cat": "Kött & chark",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "7d02eefa8b4b",
+   "text": "Färsk laxfilé med skinn, mittbit, ca 600 g",
+   "cat": "Fisk & skaldjur",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "c313090afcee",
+   "text": "Skalade räkor, 250 g",
+   "cat": "Fisk & skaldjur",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "c21fbc50d913",
+   "text": "Stenbitsrom, ca 70 g",
+   "cat": "Fisk & skaldjur",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "e0273f1272f5",
+   "text": "Ansjovisfilé, 1 burk (ca 125 g)",
+   "cat": "Fisk & skaldjur",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "5481f89ec730",
+   "text": "Sill utan grädde i såsen, 2–3 sorter",
+   "cat": "Fisk & skaldjur",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "e7e4a6ecb92d",
+   "text": "Mjölkfritt matfett i block, 2 × ca 500 g",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "c9573245b729",
+   "text": "Havredryck, 2 liter",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "4a6192275080",
+   "text": "Vispbar havregrädde, 2 × 2,5 dl",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "beef88d9d0a9",
+   "text": "Havrebaserad matlagningsgrädde, 2,5 dl",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "aabc977624e7",
+   "text": "Havrefraiche, 3 × 2 dl",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "32a8bd275edb",
+   "text": "Mjölkfri riven ost, ca 150 g",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "862ea97b8631",
+   "text": "Ägg, minst 6 st",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "9077009cac6d",
+   "text": "Mjölkfria ostar till ostbrickan, 2–3 sorter",
+   "cat": "Kyl & ägg",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "48fd403b94c7",
+   "text": "Fast potatis, 2 kg",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "870c69fbb4f9",
+   "text": "Gul lök, 2 st",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "8e19edf77b24",
+   "text": "Rödlök, 2 st",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "cae342565a3b",
+   "text": "Grönkål, 400 g",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "894cb68fc7ff",
+   "text": "Brysselkål, 500 g",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "e9c8f16926df",
+   "text": "Färsk dill, 2 krukor",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "320b27ac5839",
+   "text": "Pepparrot, 1 bit",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "75b9008f3365",
+   "text": "Rött äpple, 1 st",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "2a29316805c5",
+   "text": "Citron, 1 st",
+   "cat": "Frukt & grönt",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "13a6d73e490b",
+   "text": "Vörtbröd, mjölkfritt",
+   "cat": "Bröd",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "4f358d8816ce",
+   "text": "Knäckebröd, 1 paket",
+   "cat": "Bröd",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "b405f2b36d98",
+   "text": "Rundkornigt ris (grötris)",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "1e9467ab18a6",
+   "text": "Vetemjöl, 2 kg",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "6d0003b303f5",
+   "text": "Strösocker, 1 kg",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "68f823c5812e",
+   "text": "Ljus sirap",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "e2cd9a6c2f8c",
+   "text": "Vaniljsocker",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "7af667513f40",
+   "text": "Saffran, 1 paket à 0,5 g",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "febb7a7d60a4",
+   "text": "Jäst för söta degar",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "771bc443f9c1",
+   "text": "Russin",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "ab5d5620ba79",
+   "text": "Rostade mandelspån, 50 g",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "3239858ff643",
+   "text": "Hasselnötter, 1 dl",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "f9d029ca8872",
+   "text": "Ströbröd, mjölkfritt",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "e3e882fa1be3",
+   "text": "Inlagda rödbetor, ca 500 g",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "a8c3ded1fb16",
+   "text": "Majonnäs",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "d9c2bac4b69c",
+   "text": "Senap",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "d878f2f83fe8",
+   "text": "Sötstark senap",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "5921781c2d7a",
+   "text": "Flytande honung",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "5467ef1679c7",
+   "text": "Vitvinsvinäger",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "16db808c4d7c",
+   "text": "Rapsolja",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "92873fef476e",
+   "text": "Olivolja",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "4a6a012a054f",
+   "text": "Kinesisk soja",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "47b23a83aad1",
+   "text": "Paprikapulver",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "8bab53a05369",
+   "text": "Malen ingefära",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "fa1920c57bcf",
+   "text": "Malen kryddpeppar",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "e06c2ba2e80d",
+   "text": "Malen kryddnejlika",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "9d87df3386dd",
+   "text": "Kanelstänger",
+   "cat": "Skafferi",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "8f96f72011f7",
+   "text": "Nötter i skal",
+   "cat": "Godis & snacks",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "ded4f8a14f85",
+   "text": "Mjölkfritt julgodis",
+   "cat": "Godis & snacks",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "d065116ac7d1",
+   "text": "Bakplåtspapper",
+   "cat": "Hushåll",
+   "done": false,
+   "added": 1794142802
+  },
+  {
+   "id": "f6928e84fac7",
+   "text": "Nötknäckare",
+   "cat": "Hushåll",
+   "done": false,
+   "added": 1794142802
+  }
+ ]
+}
