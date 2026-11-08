@@ -26,7 +26,7 @@ MENY = [
 ]
 
 # Filer och mappar som kopieras som de är
-KOPIERA = ["style.css", "spel.js", "ljud.js", "kontakt.php", "bilder"]
+KOPIERA = ["style.css", "spel.js", "ljud.js", "kontakt.php", "bilder", "mat"]
 
 
 def main():
